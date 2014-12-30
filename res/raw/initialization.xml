@@ -1,0 +1,64 @@
+<Procedure type="Initialization" author="SANA-VIT">
+	<Page>
+		<Element type="RADIO" id="1" concept="PATIENT STATUS" question="Is the patient new or a follow-up?" answer="" choices="NEW,FOLLOW-UP" />
+	</Page>
+
+	<Page>
+		<ShowIf>
+			<Criteria type="EQUALS" id="1" value="NEW" />
+		</ShowIf>
+		<Element type="ENTRY" id="2" concept="PATIENT ID" question="Enrol patient with a unique ID number " answer="" />
+	</Page>
+	
+	<Page>
+		<ShowIf>
+			<Criteria type="EQUALS" id="1" value="NEW" />
+		</ShowIf>
+		<Element type="PICTURE" id="3" concept="PATIENT'S PICTURE" question="Take patient's picture" answer="" />	
+ 	</Page>
+	
+	<Page>
+		<ShowIf>
+			<Criteria type="EQUALS" id="1" value="NEW" />
+		</ShowIf>
+		<Element type="ENTRY" id="4" concept="PATIENT'S NAME" question="Enter patient's first name" answer="" />
+	</Page>
+	
+	<Page>
+		<ShowIf>
+			<Criteria type="EQUALS" id="1" value="NEW" />
+		</ShowIf>
+		<Element type="RADIO" id="5" concept="PATIENT'S GENDER" question="Patient's gender :" answer="" choices="Male,Female" />
+	</Page>
+	
+	<Page>
+		<ShowIf>
+			<Criteria type="EQUALS" id="1" value="NEW" />
+		</ShowIf>
+		<Element type="ENTRY" id="6" concept="PATIENT'S CONTACT" question="Enter patient's contact number and address" answer="" />
+	</Page>
+	
+	<Page>
+		<ShowIf>
+			<Criteria type="EQUALS" id="1" value="NEW" />
+		</ShowIf>
+		<Element type="SELECT" id="patientBirthdateMonth" concept="BIRTHDATE MONTH" question="Enter Patient's Birthdate Month:" choices="January,February,March,April,May,June,July,August,September,October,November,December"/>
+	    <Element type="SELECT" id="patientBirthdateDay" concept="BIRTHDATE DAY" question="Day:" choices="01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31"/>
+	   	<Element type="ENTRY" id="patientBirthdateYear" concept="BIRTHDATE YEAR" numeric="DIALPAD" required="true" helpText="Enter the patient's birth year." question="Year:" answer=""/>
+	</Page>
+	
+	<Page>
+		<ShowIf>
+			<Criteria type="EQUALS" id="1" value="FOLLOW-UP" />
+		</ShowIf>
+		<Element type="ENTRY" id="8" concept="PATIENT'S ID" question="Enter Patient's unique ID number" answer="" />
+	</Page>
+
+
+</Procedure>
+    
+
+		
+	
+	
+	

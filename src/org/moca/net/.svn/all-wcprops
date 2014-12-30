@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/889/clients/android/branches/release-1.0.x/src/org/moca/net
+END
+MDSInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/889/clients/android/branches/release-1.0.x/src/org/moca/net/MDSInterface.java
+END
+SMSReceive.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/820/clients/android/branches/release-1.0.x/src/org/moca/net/SMSReceive.java
+END
+MDSResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/654/clients/android/branches/release-1.0.x/src/org/moca/net/MDSResult.java
+END
+MDSCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/654/clients/android/branches/release-1.0.x/src/org/moca/net/MDSCode.java
+END
+MDSNotification.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/543/clients/android/branches/release-1.0.x/src/org/moca/net/MDSNotification.java
+END

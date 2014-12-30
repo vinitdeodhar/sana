@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/836/clients/android/branches/release-1.0.x/res/layout
+END
+main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/623/clients/android/branches/release-1.0.x/res/layout/main.xml
+END
+row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/543/clients/android/branches/release-1.0.x/res/layout/row.xml
+END
+camera_preview.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/543/clients/android/branches/release-1.0.x/res/layout/camera_preview.xml
+END
+select_diagnosis.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/543/clients/android/branches/release-1.0.x/res/layout/select_diagnosis.xml
+END
+pageslist_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/543/clients/android/branches/release-1.0.x/res/layout/pageslist_item.xml
+END
+procedure_runner_done.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/774/clients/android/branches/release-1.0.x/res/layout/procedure_runner_done.xml
+END
+procedure_list_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/777/clients/android/branches/release-1.0.x/res/layout/procedure_list_row.xml
+END

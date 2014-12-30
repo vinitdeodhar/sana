@@ -1,0 +1,679 @@
+﻿<Procedure title="Pediatric protocols" author="SANA">
+
+<Page>
+  <Element type="RADIO" concept="AGE GRP" id ="agegrp" question="मुलाचे वय" choices="Less than 2 months,2 months to 5 years" required = "true" helpText="Select age group in which the child fits"/>
+</Page>
+
+
+
+ <Page>
+ <ShowIf>
+         <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" /> 
+ </ShowIf>
+     <Element type="RADIO" concept="DRINK WATER" id="111" question="Is the child able to drink/breakfeed ?" answer="" choices="Yes,No"       required="true" helpText="Indicate if child is able to drink or breakfeed" /> 
+ </Page>
+<Page>
+     <ShowIf>
+        <and> 
+         <Criteria type="EQUALS" id="111" value="Yes" />
+          <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" />
+       </and> 
+     </ShowIf>
+     <Element type="RADIO" concept="VOMIT ALL FOOD" id="112" question="Does the child vomit everything he eats ?" answer="" choices="Yes,No"     required="true" helpText="Indicate if child if vomits everything he  eats" /> 
+ </Page>
+<Page>
+     <ShowIf>
+       <and>
+          <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" />
+        <Criteria type="EQUALS" id="111" value="Yes" /> 
+        <Criteria type="EQUALS" id="112" value="No" />
+      </and>   
+    </ShowIf>
+      <Element type="RADIO" concept="CONVULSION" id="113" question="Has the child had convulsions ?" answer="" choices="Yes,No"      required="true" helpText="Indicate if child had convulsions" /> 
+ </Page>
+<Page>
+    <ShowIf>
+       <and> 
+           <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" />   
+         <Criteria type="EQUALS" id="111" value="Yes" /> 
+         <Criteria type="EQUALS" id="112" value="No" /> 
+         <Criteria type="EQUALS" id="113" value="No" />
+      </and>  
+    </ShowIf>
+ <Element type="RADIO" concept="LETHARGIC" id="114" question="Is the child lethargic or unconscious ?" answer="" choices="Yes,No" required="true" helpText="Indicate if child is lethargic or unconscious" /> 
+  </Page>
+<Page>
+    <ShowIf>
+     <and>   
+       <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" />  
+   <or>
+         <Criteria type="EQUALS" id="111" value="No" /> 
+        <Criteria type="EQUALS" id="112" value="Yes" /> 
+         <Criteria type="EQUALS" id="113" value="Yes" /> 
+        <Criteria type="EQUALS" id="114" value="Yes" />         
+      </or>
+  </and> 
+   </ShowIf>
+  <Element type="TEXT" id="115" question="EMERGENCY : Immediate hospital care required. Take the child to hospital " answer="" />   </Page>
+
+<Page>
+     <ShowIf>
+                   <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" /> 
+ </ShowIf>
+    <Element type="RADIO" concept="COUGH" id="122" question="Does the child have cough or breathing difficulties?" answer="" choices="Yes,No" required="true"   helpText="Indicate if child has difficulty in breathing or cough" /> 
+</Page>
+ <Page>
+     <ShowIf>
+       <and>
+             <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" />
+            <Criteria type="EQUALS" id="122" value="Yes" /> 
+       </and> 
+    </ShowIf>
+    <Element type="ENTRY" id="123"  concept="COUGH DURATION"  question="How long has the Cough persisted (days)?" answer=""  /> 
+ </Page>
+<Page>
+     <ShowIf>
+         <and>
+            <Criteria type="EQUALS" id="122" value="Yes" />
+            <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" />
+        </and> 
+    </ShowIf>
+     <Element type="RADIO" id="124"  concept="AGE GROUP" question="Which age group the child belongs to ?" answer="" required="true" choices="2 months to 12 months,12 months to 5 years" helpText="select age of child" /> 
+   
+ </Page>
+ <Page>
+     <ShowIf>
+         <and>
+             <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" /> 
+            <Criteria type="EQUALS" id="122" value="Yes" /> 
+            <Criteria type="EQUALS" id="124" value="2 months to 12 months" />
+         </and>   
+    </ShowIf>
+    <Element type="RADIO" id="125"  concept="FAST BREATHING" question="Keep the child calm.Does the child breathe fast(more than 50 per min) ?" answer="" required="true" helpText="Indicate weather the child breathe greater than 50 per minute" choices="Yes,No" /> 
+ </Page>
+<Page>
+     <ShowIf>
+         <and>
+              <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" /> 
+            <Criteria type="EQUALS" id="122" value="Yes" /> 
+            <Criteria type="EQUALS" id="124" value="12 months to 5 years" />
+         </and>   
+    </ShowIf>
+    <Element type="RADIO" id="126"  concept="FAST BREATHING" question="Keep the child calm.Does the child breathe fast(more than 40 per min) ?" answer="" required="true" helpText="Indicate weather the child breathe greater than 40 per minute" choices="Yes,No" /> 
+ </Page>
+<Page>
+     <ShowIf>
+         <and>
+             <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" />
+            <Criteria type="EQUALS" id="122" value="Yes" /> 
+         </and>
+     </ShowIf>
+    <Element type="MULTI_SELECT" id="127" concept="COUGH RELATED" question="Keep the child calm. Check symptoms present"  choices="chest indrawing,stridor,wheezing" answer="None" /> 
+ </Page>
+<Page>
+   <ShowIf>
+         <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" /> 
+ </ShowIf>
+    <Element type="RADIO" id="128" concept="DIARRHOEA" question="Does the child have diarrhoea(loose motions)?" answer="" choices="Yes,No" required="true"  helpText="Indicate if child has diarrhoea or loose motions" /> 
+</Page>
+<Page>
+     <ShowIf>
+         <and> 
+             <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" /> 
+            <Criteria type="EQUALS" id="128" value="Yes" /> 
+        </and>
+    </ShowIf>
+    <Element type="ENTRY" concept="DIARRHOEA DURATION"  id="129" question="How long has the diarrhoea persisted (days)?" answer="" required="true" helpText="Enter number of days for which loose motions exist" /> 
+ </Page>
+<Page>
+     <ShowIf>
+       <and>
+             <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" />
+            <Criteria type="EQUALS" id="128" value="Yes" /> 
+       </and>  
+    </ShowIf>
+    <Element type="RADIO" concept="BLOOD IN STOOL" id="1210" question="Is there blood in the stool?" answer="" choices="Yes,No" required="true" helpText="Indicate if there is blood in childs stool or feces" /> 
+ </Page>
+<Page>
+     <ShowIf>
+            <and>
+             <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" />
+            <Criteria type="EQUALS" id="128" value="Yes" />
+          </and> 
+     </ShowIf>
+    <Element type="MULTI_SELECT" id="1211" concept="DIATTHOEA RELATED" question="Check the symptoms present "  answer="None" choices="lethargic,uncounsciousness,restless,irritable,sunken eyes" /> 
+ </Page>
+<Page>
+     <ShowIf>
+         <and>
+              <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" />      
+            <Criteria type="EQUALS" id="128" value="Yes" /> 
+            <Criteria type="EQUALS" id="1211" value="sunken eyes" />
+         </and> 
+     </ShowIf>
+      <Element type="PICTURE" concept="SUNKEN EYES" id="1212" question="Take picture of eyes" answer="" />       
+ </Page>
+<Page>
+     <ShowIf>
+        <and>
+             <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" />
+            <Criteria type="EQUALS" id="128" value="Yes" /> 
+        </and> 
+     </ShowIf>
+    <Element type="SELECT" concept="THIRST" id="1213" question="Offer water to child.Select his response" answer="" choices="child drinks poorly,child drinks fast (thirstly),child does not drink water at all" /> 
+ </Page>
+<Page>
+     <ShowIf>
+          <and>
+              <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" />
+            <Criteria type="EQUALS" id="128" value="Yes" /> 
+         </and>
+     </ShowIf>
+    <Element type="SELECT" concept="ABDOMENAL SKIN" id="1214" question="Pinch abdomenal skin. Select the response" choices="skin goes back very slowly (more than 2 seconds),skin goes back slowly,skin goes back at normal rate" /> 
+ </Page>
+<Page>
+   <ShowIf>
+         <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" /> 
+ </ShowIf>
+    <Element type="RADIO" id="1215" concept="FEVER" question="Does the child have fever?(37.5C)" answer="" choices="Yes,No" required="true"   helpText="Indicate if child has fever" /> 
+</Page>
+<Page>
+     <ShowIf> 
+         <and>
+              <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" /> 
+            <Criteria type="EQUALS" id="1215" value="Yes" /> 
+       </and>
+     </ShowIf>
+    <Element type="ENTRY" concept="FEVER DURATION" id="1216" question="How long has the fever persisted ?" answer=""/> 
+ </Page>
+<Page>
+     <ShowIf>
+         <and>
+               <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" />       
+            <Criteria type="EQUALS" id="1215" value="Yes" /> 
+            <Criteria type="GREATER" id="1216" value="7" />
+         </and> 
+     </ShowIf>
+      <Element type="RADIO" concept="FEVER PERSISTANCE" id="1217" question="Was the fever present of every single day ?" answer="" choices="Yes,No" />       
+ </Page>
+<Page>
+     <ShowIf>
+         <and>
+             <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" />
+            <Criteria type="EQUALS" id="1215" value="Yes" /> 
+         </and>
+     </ShowIf>
+    <Element type="RADIO" concept="MEASLES IN PAST" id="1218" question="Does the child had measles within past 3 months ?"  answer="" choices="Yes,No" required="true"   helpText="Indicate if the child has measles in the past 3 months" /> 
+ </Page>
+<Page>
+     <ShowIf>
+         <and>
+              <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" />      
+            <Criteria type="EQUALS" id="1215" value="Yes" /> 
+            <Criteria type="EQUALS" id="1218" value="No" />
+         </and> 
+     </ShowIf>
+      <Element type="MULTI_SELECT" concept="FEVER RELATED" id="1219"  question="Check the symptoms present " choices="Cough, Stiff neck, Runny nose, Generalized rash, Red eyes" answer="None" />    
+ </Page>
+<Page>
+     <ShowIf>
+         <and>
+               <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" />      
+            <Criteria type="EQUALS" id="1215" value="Yes" /> 
+            <Criteria type="EQUALS" id="1218" value="Yes" />
+         </and> 
+     </ShowIf>
+      <Element type="MULTI_SELECT" concept="FEVER RELATED" id="1220" question="Check the symptoms present " choices="Deep and extensive mouth ulcers,Pus draining from eye,Clouding of cornea" answer="None" />    
+ </Page>
+<Page>
+     <ShowIf>
+         <and>
+              <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" />      
+            <Criteria type="EQUALS" id="1215" value="Yes" /> 
+               <or>    
+                                <and>  
+                                  <Criteria type="EQUALS" id="1218" value="No" />
+                                   <or>
+                                 <Criteria type="EQUALS" id="1219" value="Generalized rash" />
+                                  <Criteria type="EQUALS" id="1219" value="Red eyes" />
+                                   </or> </and>                 
+             
+                                <and>
+                                      <Criteria type="EQUALS" id="1218" value="Yes" />
+                                    <or>      
+                                     <Criteria type="EQUALS" id="1220" value="Deep and extensive mouth ulcers" />
+                                     <Criteria type="EQUALS" id="1220" value="Pus draining from eye"/>
+                                     <Criteria type="EQUALS" id="1220" value="Clouding of cornea" />
+                                     </or> </and> 
+                </or>
+         </and> 
+     </ShowIf>
+      <Element type="PICTURE" concept="AFFECTED EYES AND MOUTH" id="1221" question="Take picture of eyes and mouth ulcers(if present) " answer="" />     
+ </Page>
+
+<Page>
+    <ShowIf>
+         <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" /> 
+ </ShowIf>
+    <Element type="RADIO" concept="EAR PROBLEM" id="1222" question="Does the child have ear problem ?" answer="" choices="Yes,No" required="true"           helpText="Indicate if child has ear problem" /> 
+</Page>
+<Page>
+     <ShowIf>
+       <and>
+             <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" /> 
+            <Criteria type="EQUALS" id="1222" value="Yes" /> 
+        </and>
+    </ShowIf>
+             <Element type="MULTI_SELECT" concept="EAR PROBLEM SYMPTOMS" id="1223" question="Check the symptoms present "  choices="Ear pain,Ear discharge, Pus draining from ear,Tender swelling behind ear" answer="None" />
+  </Page>
+<Page>
+     <ShowIf>
+         <and>
+              <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" />      
+            <Criteria type="EQUALS" id="1222" value="Yes" /> 
+             <Criteria type="EQUALS" id="1223" value="Ear pain" />
+         </and> 
+     </ShowIf>
+      <Element type="ENTRY" concept="EAR PAIN DURATION" id="1224" question="For how long ear pain persisted ? " answer="" required="true"   helpText="Indicate for how long ear pain persisted" />
+ </Page>
+<Page>
+     <ShowIf>
+         <and> 
+              <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" />      
+            <Criteria type="EQUALS" id="1222" value="Yes" /> 
+             <Criteria type="EQUALS" id="1223" value="Ear discharge" />
+         </and> 
+     </ShowIf>
+      <Element type="ENTRY" id="1225" concept="EAR DISCHARGE DURATION" question="For how long ear discharge persist ? " answer="" required="true"   helpText="Indicate for how long ear discharge persist" />     
+ </Page>
+<Page>
+     <ShowIf>
+         <and>
+               <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" />      
+            <Criteria type="EQUALS" id="1222" value="Yes" /> 
+             <Criteria type="EQUALS" id="1223" value="Pus draining from ear" />
+         </and> 
+     </ShowIf>
+      <Element type="ENTRY" id="1226" concept="PUS DRAINING DURATION" question="For how long pus draining from ear persist ? " answer=""  required="true"   helpText="Indicate for how long pus draining from ear persist" />     
+ </Page>
+<Page>
+     <ShowIf>
+         <and>
+               <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" />      
+            <Criteria type="EQUALS" id="1222" value="Yes" /> 
+             <Criteria type="EQUALS" id="1223" value="Tender swelling behind ear" />
+         </and> 
+     </ShowIf>
+      <Element type="ENTRY" id="1227"  concept="EAR SWELLING DURATION" question="For how long tender swelling behind ear persist ? " answer="" required="true"   helpText="Indicate for how long tender swelling behind ear persist" />     
+ </Page>
+<Page>
+     <ShowIf>
+         <and>
+                <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" />       
+            <Criteria type="EQUALS" id="1222" value="Yes" /> 
+                <or>
+                   <Criteria type="EQUALS" id="1223" value="Ear discharge" />
+                   <Criteria type="EQUALS" id="1223" value="Pus draining from ear" />
+                   <Criteria type="EQUALS" id="1223" value="Tender swelling behind ear" />
+               </or>
+         </and> 
+     </ShowIf>
+      <Element type="PICTURE" concept="EAR" id="1228" question="Take pictures of affected areas of ear " answer="" />     
+ </Page>
+ <Page>
+       <ShowIf>
+         <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" /> 
+ </ShowIf>
+      <Element type="ENTRY" concept="WEIGHT" id="131" question="Enter weight in kgs" answer="" required="true" helpText="Enter weight in kgs" /> 
+ </Page>
+
+<Page>
+         <ShowIf>
+         <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" /> 
+ </ShowIf>
+        <Element type="MULTI_SELECT" concept="MALNUTRITION SYMPTOMS" id="132" question="Check symptoms that are present"  choices="Visible severe wasting,Oedema of both feet" /> 
+ </Page>
+ <Page>
+     <ShowIf>
+       <and>
+            <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" />   
+          <not>
+            <Criteria type="EQUALS" id="132" value="" /> 
+         </not>
+        </and>   
+     </ShowIf>
+    <Element type="PICTURE" concept="MALNUTRITION PIC" id="133" question="Take pictures of affected areas " answer="" />    
+ </Page>
+<Page>
+         <ShowIf>
+         <Criteria type="EQUALS" id="agegrp" value="2 months to 5 years" /> 
+ </ShowIf>
+      <Element type="SELECT"  concept="ANEMIA SYMPTOMS" id="141" question="Look for palmar pallor. Select your observation "   required="true" choices="Severe pallor,Some pallor,No palmar pallor" helpText="Check the patient for palmar pallor" /> 
+</Page>   
+
+<Page>
+ <ShowIf>
+         <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" /> 
+ </ShowIf>
+		<Element type="ENTRY" id="211" concept="AXILLARY TEMP" question="Measure axillary temperature" answer="" required="true"   helpText=" Measure the axillary temperature"/>
+	</Page>
+	
+		<Page>
+<ShowIf>
+         <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" /> 
+ </ShowIf>
+		<Element type="RADIO" id="212" concept="FEEDING DIFFICULTY" question="Is the infant having difficulty in feeding?"   answer=""  choices="Yes,No" />
+	</Page>
+	
+	<Page>
+<ShowIf>
+         <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" /> 
+ </ShowIf>
+		<Element type="RADIO" id="213" concept="CONVULSIONS" question="Has the infant had convulsions?" answer="" choices="Yes,No" />
+	</Page>
+	
+<Page>
+<ShowIf>
+         <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" /> 
+ </ShowIf>
+		<Element type="RADIO" id="214" concept="CHEST INDRAWING" question="Does the infant show severe chest indrawing?"  answer="" choices="Yes,No" />
+	</Page>
+	
+	<Page>
+<ShowIf>
+         <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" /> 
+ </ShowIf>
+		<Element type="ENTRY" id="215" concept="BREATH COUNT" question="Keep infant calm. Count number of breathes count per min" answer="" />
+	</Page>
+
+                     <Page>
+		<ShowIf>
+                                         <and>
+                                                      <Criteria type="EQUALS" id="agegrp"  value="Less than 2 months" /> 
+			<Criteria type="GREATER" id="215" value="60" />
+                                         </and>
+		</ShowIf>
+		<Element type="ENTRY" id="216" concept="BREATH COUNT" question="Recheck to confirm breathes per min" answer="" />
+	</Page>
+    
+
+<Page>
+<ShowIf>
+         <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" /> 
+ </ShowIf>
+           <Element type="MULTI_SELECT" id="217" concept="INFANT SYMPTOMS" question="Keep the child calm. Check the symptoms present"  choices="red umbilicus,umbilicus with draining pus,skin pustules" answer="None" />
+      </Page>
+<Page>
+        <ShowIf>
+      <and>
+           <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" /> 
+                
+                <not>   
+                   <Criteria type="EQUALS" id="217" value="None" /> 
+                 </not>           
+       
+    </and>      
+  </ShowIf>
+                  <Element type="PICTURE" concept="AFFECTED AREAS" id="218" question="Take pictures of affected areas with the previous symptoms" answer="" />   
+   </Page>
+
+<Page>
+     <ShowIf>
+         <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" /> 
+ </ShowIf>
+       <Element type="RADIO" id="219" concept="INFANT ASLEEP" question="Observe movements of Infant.Is the infant asleep?" answer="" choices="Yes,No" required="true" helpText="Indicate if the infant is asleep" />
+
+</Page>
+
+
+
+
+<Page>
+     <ShowIf>
+        <and>
+          <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" /> 
+
+              <Criteria type="EQUALS" id="219" value="Yes" />   
+                
+        </and>  
+ </ShowIf>
+       <Element type="RADIO" id="2191" concept="INFANT REACTION" question="Wake the infant. Does the infant move on his or her own?"  answer="" choices="Yes,No" required="true" helpText="Indicate if the infant moves on his or her own" />
+
+</Page>   
+<Page>
+     <ShowIf>
+      
+                   <and>
+                     <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" /> 
+                    <or>
+                    <Criteria type="EQUALS" id="219" value="No" />  
+                    <Criteria type="EQUALS" id="2191" value="No" />    
+                     </or>
+                     </and>
+ </ShowIf>
+       <Element type="RADIO" id="220" concept="STIMULATION" question="Does the infant need stimulation to move ?"  answer="" choices="Yes,No" required="true" helpText="Indicate if the infant need stimulation to move" />
+
+</Page>   
+
+<Page>
+   <ShowIf>
+         <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" /> 
+ </ShowIf>		
+      <Element type="MULTI_SELECT" id="221" concept="JAUNDICE SYMPTOMS" question="Which part of the body are yellow"  choices="Skin,Eyes,Palms,Soles" answer="None" />
+	</Page>
+	
+	<Page>
+                     <ShowIf>
+                       <and>
+                            <not>
+                                    <Criteria type="EQUALS" id="221" value="None"/>
+                            </not> 
+                            <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" />   
+                            <Criteria type="EQUALS" id="221" value="Skin"/>	
+                       </and>
+                   </ShowIf>
+                        <Element type="ENTRY" id="2221" concept="SKIN COLORATION DURATION" question="How long have Skin colorations lasted?" answer="" />
+	</Page>
+                  <Page>
+	 <ShowIf>
+                       <and>
+                            <not>
+                                    <Criteria type="EQUALS" id="221" value="None"/>
+                            </not> 
+                          <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" /> 
+                          <Criteria type="EQUALS" id="221" value="Eyes"/>	
+                       </and>
+                   </ShowIf>
+                   <Element type="ENTRY" id="2222" concept="EYES COLORATION DURATION" question="How long have eyes colorations lasted?" answer="" />
+	</Page>
+                  <Page>
+                          <ShowIf>
+                        <and>
+                              <not>
+                                    <Criteria type="EQUALS" id="221" value="None"/>
+                            </not> 
+                            <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" />  
+                          <Criteria type="EQUALS" id="221" value="Palms"/>	
+                        </and>
+                        </ShowIf>
+		<Element type="ENTRY" id="2223" concept="PALMS COLORATION DURATION" question="How long have the palm colorations lasted?" answer="" />
+	</Page>
+                  <Page>
+                                <ShowIf>
+                          <and>
+                               <not>
+                                    <Criteria type="EQUALS" id="221" value="None"/>
+                            </not> 
+                           <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" /> 
+                          <Criteria type="EQUALS" id="221" value="Soles"/>	
+                          </and>
+                              </ShowIf>
+		<Element type="ENTRY" id="2224" concept="SOLES COLORATION DURATION" question="How long have the soles colorations  lasted?" answer="" />
+	</Page>
+
+<Page>
+	<ShowIf>
+         <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" /> 
+              </ShowIf>
+                  <Element type="RADIO" id="231" concept="DIARRHOEA" question="Does the child have diarrhoea(loose motions for infaants is watery)?" answer="" choices="Yes,No" />
+	</Page>
+
+	<Page>
+		<ShowIf>
+                                            <and> 
+                                                      <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" /> 
+			<Criteria type="EQUALS" id="231" value="Yes" />
+                                            </and>
+		</ShowIf>
+		<Element type="ENTRY" id="232" concept="DIARRHOEA DURATION" question="How long has diarrhoea persisted?(Days)" answer="" />
+	</Page>
+	
+	<Page>
+		<ShowIf>
+                                             <and>
+			<Criteria type="EQUALS" id="231" value="Yes" />
+                                                      <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" /> 
+                                             </and>
+		</ShowIf>
+		<Element type="MULTI_SELECT" id="233" concept="SYMPTOMS" question="Check for the symptoms " answer="None" choices="Restless,Irritable,Sunken eyes" />
+	</Page>
+	
+	<Page>
+		<ShowIf>
+			<and>
+                                                          <not>
+                                                                 <Criteria type="EQUALS" id="233" value="None" />
+                                                           </not> 
+                                                       <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" />    
+			<Criteria type="EQUALS" id="231" value="Yes" />
+			<Criteria type="EQUALS" id="233" value="Sunken eyes" />
+			</and>
+		</ShowIf>
+		<Element type="PICTURE" id="234" concept="EYE PICTURE" question="Take picture of sunken eyes" answer="" />
+	</Page>
+	
+	<Page>
+		<ShowIf>
+                                                 <and> 
+                                                         <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" />        
+			<Criteria type="EQUALS" id="231" value="Yes" />
+                                                 </and>
+		</ShowIf>
+		<Element type="RADIO" id="235" concept="SKIN REACTION" question="Pinch abdomenal skin. It goes back " answer="" choices="Very slowly(more than 2 seconds),Slowly,Normal rate" />
+	</Page>
+
+    <Page>
+          <ShowIf>
+         <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" /> 
+         </ShowIf>
+		<Element type="ENTRY" id="241" concept="INFANTS WEIGHT" question="Measure the weight of infant" answer="" />
+	</Page>
+	
+	<Page>
+          <ShowIf>
+         <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" /> 
+         </ShowIf> 
+		<Element type="RADIO" id="242" concept="BREASTFED" question="Is the infant breastfed?" answer="" choices="Yes,No" required="true"   helpText="Indicate if child is breastfed"/>
+	</Page>
+	
+	<Page>
+		<ShowIf>
+                                            <and>
+                                                      <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" /> 
+			<Criteria type="EQUALS" id="242" value="Yes" />
+                                             </and> 
+		</ShowIf>
+		<Element type="ENTRY" id="243" concept="BREASTFEEDING FREQUENCY" question="How many times per day?" answer=""/>
+	</Page>
+	
+	<Page>
+		<ShowIf>
+                                           <and> 
+                                                       <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" />   
+			<Criteria type="EQUALS" id="242" value="Yes" />
+                                             </and>
+		</ShowIf>
+		<Element type="RADIO" id="244" concept="BREASTFEEDING STATUS" question="Has the infant been breastfed in the past hour?"  choices="Yes,No"  required="true"   helpText="Indicate if infant has been breastfed in past hour" answer="" />
+	</Page>
+ <Page>
+         <ShowIf>
+                                            <and>
+                                                      <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" /> 
+			<Criteria type="EQUALS" id="242" value="Yes" />
+                                                      <Criteria type="EQUALS" id="244" value="No" />
+                                            </and> 
+           </ShowIf>
+       <Element type="TEXT" id="2441" question="Wait till infant is hungry Press Next to continue" answer="" />                 
+   </Page>    	
+	<Page>
+		<ShowIf>
+			<and>
+                                                       <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" /> 
+			<Criteria type="EQUALS" id="242" value="Yes" />
+			<Criteria type="EQUALS" id="244" value="Yes" />
+			</and>
+		</ShowIf>
+		<Element type="SELECT" id="245" concept="BREASTFEEDING" question="Breastfeed child for 4 minutes.Clear nose if necessary.Observe if child is well attached: " answer="" choices="More areola seen above top lip than below lip,wideopen mouth,lower lip turned outwards,chin touching breast" />
+	</Page>
+		
+	<Page>
+		<ShowIf>
+                                              <and>
+			<Criteria type="EQUALS" id="242" value="Yes" />
+                                                      <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" /> 
+                                               </and> 
+		</ShowIf>
+		<Element type="RADIO" id="246" concept="SUCKLING ACTION" question="how is the child suckling? " answer="" choices="Effectively(slow and deep sucks with pauses),Not effectively" />
+	</Page>
+		
+	<Page>
+                              <ShowIf>
+         <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" /> 
+                             </ShowIf>
+		<Element type="RADIO" id="247" concept="INFANT FOOD CONSUMPTION" question="Does the infant receive any other food or drink?" answer="" choices="Yes,No" required="true"   helpText="Indicate if child is given any food or drink other than breastfeeding" />
+	</Page>
+	
+	<Page>
+		<ShowIf>
+		 <and>
+                                         <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" /> 	
+                                        <Criteria type="EQUALS" id="247" value="Yes"/>
+                                    </and>
+		</ShowIf>
+		<Element type="ENTRY" id="248" concept="FOOD INTAKE FREQs" question="How many times per week" answer="" />
+	</Page>
+				
+	<Page>
+		<ShowIf>
+                                            <and>
+                                                     <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" /> 
+			<Criteria type="EQUALS" id="247" value="Yes"/>
+                                            </and>
+		</ShowIf>
+		<Element type="ENTRY" id="249" concept="INTAKE CONTENT" question="What is fed to the infant?" answer="" />
+	</Page>	 
+	
+	<Page>
+		<ShowIf>
+                                             <and>
+                                                     <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" /> 
+                                            </and>
+		</ShowIf>
+		<Element type="RADIO" id="2410" concept="MOUTH CONDITION" question="Are there ulcers or white patches in mouth" answer="" choices="Yes,No" />
+	</Page>
+	
+	<Page>
+		<ShowIf>
+                                                <and>
+                                                      <Criteria type="EQUALS" id="agegrp" value="Less than 2 months" /> 
+			<Criteria type="EQUALS" id="2410" value="Yes" />
+                                                </and>
+		</ShowIf>
+		<Element type="PICTURE" id="2411" concept="MOUTH PICTURE" question="Take picture" answer="" />
+	</Page>		
+
+
+</Procedure>
+
+
+ 

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/869/clients/android/branches/release-1.0.x/src/org/moca/service
+END
+QueueManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/803/clients/android/branches/release-1.0.x/src/org/moca/service/QueueManager.java
+END
+BackgroundUploader.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/869/clients/android/branches/release-1.0.x/src/org/moca/service/BackgroundUploader.java
+END
+ServiceListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/774/clients/android/branches/release-1.0.x/src/org/moca/service/ServiceListener.java
+END
+ServiceConnector.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/803/clients/android/branches/release-1.0.x/src/org/moca/service/ServiceConnector.java
+END

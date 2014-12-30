@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/806/clients/android/branches/release-1.0.x/src/org/moca/db
+END
+PatientValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/786/clients/android/branches/release-1.0.x/src/org/moca/db/PatientValidator.java
+END
+ImageProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/785/clients/android/branches/release-1.0.x/src/org/moca/db/ImageProvider.java
+END
+EventProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/802/clients/android/branches/release-1.0.x/src/org/moca/db/EventProvider.java
+END
+ProcedureProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/785/clients/android/branches/release-1.0.x/src/org/moca/db/ProcedureProvider.java
+END
+SoundProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/785/clients/android/branches/release-1.0.x/src/org/moca/db/SoundProvider.java
+END
+EncounterDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/789/clients/android/branches/release-1.0.x/src/org/moca/db/EncounterDAO.java
+END
+ProcedureDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/785/clients/android/branches/release-1.0.x/src/org/moca/db/ProcedureDAO.java
+END
+MocaDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/785/clients/android/branches/release-1.0.x/src/org/moca/db/MocaDB.java
+END
+SavedProcedureProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/785/clients/android/branches/release-1.0.x/src/org/moca/db/SavedProcedureProvider.java
+END
+NotificationProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/785/clients/android/branches/release-1.0.x/src/org/moca/db/NotificationProvider.java
+END
+NotificationMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/543/clients/android/branches/release-1.0.x/src/org/moca/db/NotificationMessage.java
+END
+Event.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/806/clients/android/branches/release-1.0.x/src/org/moca/db/Event.java
+END
+EventDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/789/clients/android/branches/release-1.0.x/src/org/moca/db/EventDAO.java
+END
+PatientProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/785/clients/android/branches/release-1.0.x/src/org/moca/db/PatientProvider.java
+END
+PatientInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/786/clients/android/branches/release-1.0.x/src/org/moca/db/PatientInfo.java
+END

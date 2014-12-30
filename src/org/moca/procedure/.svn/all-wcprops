@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/820/clients/android/branches/release-1.0.x/src/org/moca/procedure
+END
+ProcedureParseException.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/543/clients/android/branches/release-1.0.x/src/org/moca/procedure/ProcedureParseException.java
+END
+ValidationError.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/786/clients/android/branches/release-1.0.x/src/org/moca/procedure/ValidationError.java
+END
+TextElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/762/clients/android/branches/release-1.0.x/src/org/moca/procedure/TextElement.java
+END
+DateElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/808/clients/android/branches/release-1.0.x/src/org/moca/procedure/DateElement.java
+END
+SoundElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/762/clients/android/branches/release-1.0.x/src/org/moca/procedure/SoundElement.java
+END
+ProcedureElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/808/clients/android/branches/release-1.0.x/src/org/moca/procedure/ProcedureElement.java
+END
+MultiSelectElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/762/clients/android/branches/release-1.0.x/src/org/moca/procedure/MultiSelectElement.java
+END
+ProcedurePage.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/808/clients/android/branches/release-1.0.x/src/org/moca/procedure/ProcedurePage.java
+END
+RadioElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/778/clients/android/branches/release-1.0.x/src/org/moca/procedure/RadioElement.java
+END
+SelectElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/762/clients/android/branches/release-1.0.x/src/org/moca/procedure/SelectElement.java
+END
+PictureElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/820/clients/android/branches/release-1.0.x/src/org/moca/procedure/PictureElement.java
+END
+PatientIdElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/807/clients/android/branches/release-1.0.x/src/org/moca/procedure/PatientIdElement.java
+END
+BinaryUploadElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/762/clients/android/branches/release-1.0.x/src/org/moca/procedure/BinaryUploadElement.java
+END
+TextEntryElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/803/clients/android/branches/release-1.0.x/src/org/moca/procedure/TextEntryElement.java
+END
+Procedure.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/808/clients/android/branches/release-1.0.x/src/org/moca/procedure/Procedure.java
+END
+GpsElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/781/clients/android/branches/release-1.0.x/src/org/moca/procedure/GpsElement.java
+END

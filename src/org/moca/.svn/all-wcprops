@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/889/clients/android/branches/release-1.0.x/src/org/moca
+END
+Constants.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/836/clients/android/branches/release-1.0.x/src/org/moca/Constants.java
+END
+ScalingImageAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/778/clients/android/branches/release-1.0.x/src/org/moca/ScalingImageAdapter.java
+END
+SelectableImageView.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/543/clients/android/branches/release-1.0.x/src/org/moca/SelectableImageView.java
+END
+ImagePreviewDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/621/clients/android/branches/release-1.0.x/src/org/moca/ImagePreviewDialog.java
+END

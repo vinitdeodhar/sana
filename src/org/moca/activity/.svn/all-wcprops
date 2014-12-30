@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/869/clients/android/branches/release-1.0.x/src/org/moca/activity
+END
+Moca.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/869/clients/android/branches/release-1.0.x/src/org/moca/activity/Moca.java
+END
+ProceduresList.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/543/clients/android/branches/release-1.0.x/src/org/moca/activity/ProceduresList.java
+END
+NotificationViewer.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/543/clients/android/branches/release-1.0.x/src/org/moca/activity/NotificationViewer.java
+END
+PatientInfoDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/543/clients/android/branches/release-1.0.x/src/org/moca/activity/PatientInfoDialog.java
+END
+SavedProcedureList.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/869/clients/android/branches/release-1.0.x/src/org/moca/activity/SavedProcedureList.java
+END
+NotificationList.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/543/clients/android/branches/release-1.0.x/src/org/moca/activity/NotificationList.java
+END
+Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/836/clients/android/branches/release-1.0.x/src/org/moca/activity/Settings.java
+END
+ProcedureRunner.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/869/clients/android/branches/release-1.0.x/src/org/moca/activity/ProcedureRunner.java
+END

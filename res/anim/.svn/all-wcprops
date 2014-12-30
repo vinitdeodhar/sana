@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/543/clients/android/branches/release-1.0.x/res/anim
+END
+slide_to_left.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/543/clients/android/branches/release-1.0.x/res/anim/slide_to_left.xml
+END
+slide_from_left.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/543/clients/android/branches/release-1.0.x/res/anim/slide_from_left.xml
+END
+slide_from_right.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/543/clients/android/branches/release-1.0.x/res/anim/slide_from_right.xml
+END
+slide_to_right.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/543/clients/android/branches/release-1.0.x/res/anim/slide_to_right.xml
+END
